@@ -75,3 +75,62 @@ eroded_mask = cv2.erode(mask, kernel)
 ![img1](/UploadImages/1.jpg)  
 ![img1](/UploadImages/2.jpg)    
 ![img3](/UploadImages/3.jpg)
+
+
+## Step 3:
+- We can use several different types of ConvNets for identification and classification of our Dataset. We are going to use ResNet50V2 with ImageNet weights for doing transfer learning onto our model for good accuracy across both training and validation split.
+- We split our training and test data with a ration of 0.15 ie out of total of 40000 images, we will have 
+```
+Found 34000 validated image filenames belonging to 5 classes.
+Found 6000 validated image filenames belonging to 5 classes.
+```
+- After adding onto a Global Average Pooling layer and Dropout as well as Dense layers for tailoring the Resnet model as per our needs, the summary can be seen as follows:
+```
+Model: "sequential_2"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+resnet50v2 (Model)           (None, 4, 4, 2048)        23564800  
+_________________________________________________________________
+global_average_pooling2d_2 ( (None, 2048)              0         
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 2048)              0         
+_________________________________________________________________
+dense_4 (Dense)              (None, 256)               524544    
+_________________________________________________________________
+dense_5 (Dense)              (None, 5)                 1285      
+=================================================================
+Total params: 24,090,629
+Trainable params: 24,045,189
+Non-trainable params: 45,440
+_________________________________________________________________
+```
+
+- Now we can pass on our data to the model and train it for some 30 epochs or until early stopping occurs
+
+Training in Progress
+![Training in Progress](/UploadImages/traininginprogress.jpg)
+
+
+Training About to End
+![Training About to End](/UploadImages/trainingabttoend.jpg)
+
+History of Model
+![History](/UploadImages/history.jpg)
+
+Confusion Matrix
+![confusion matrix](/UploadImages/confusionMatrix.jpg)
+
+### Step 4 : 
+Now we just have to annotate the labels as follows:
+```
+class_names = ['Average', 'Bad', 'Excellent', 'Good', 'Worse']
+```
+namely in that order as we have trained our model on this order. One Hot encoding assumes 'Average' to be 0, 'Bad' to be 1, 'Excellent' to be 2 and so on.
+
+### Step 5:
+Passing back the Image Annotations and using the contours we found for the images earlier, we can assign a color to each of the sorted kernel of Corn and draw an appropriate bounding box to them.
+
+Final Output Image
+![Final Output Image](/UploadImages/FinalImage.png)
+
