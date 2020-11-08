@@ -68,10 +68,10 @@ kernel = np.ones((5, 5), np.uint8)
 eroded_mask = cv2.erode(mask, kernel)
 ```
 
-![Eroded Mask](/UploadImage/eroded_mask.png)
+![Eroded Mask](/UploadImages/eroded_mask.png)
 
 - From this contours can be extracted using OpenCvs findContours function and bounding rects can be estabilished for theindividual seeds. Ultimately we can then store them in a temporary folder where individual photos will looks somewhat like this:
 
 ![img1](/UploadImages/1.jpg)  
-![img1](/UploadImages/1.jpg)  
-![img1](/UploadImages/1.jpg)
+![img1](/UploadImages/2jpg)  
+![img1](/UploadImages/3.jpg)
