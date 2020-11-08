@@ -40,6 +40,6 @@ So we are going to scour for Open Source Data Hosting Platforms like Kaggle for 
 
 - On Downloading the Files, we can observe that the dataset is structured as follows:
 
-
+  ![DatasetTree](/UploadImages/DatasetTree.png)
 
 ## Step 2:
