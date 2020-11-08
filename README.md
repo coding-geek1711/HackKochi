@@ -109,7 +109,7 @@ _________________________________________________________________
 - Now we can pass on our data to the model and train it for some 30 epochs or until early stopping occurs
 
 Training in Progress
-![Training in Progress](/UploadImages/traininginprogress.jpg)
+![Training in Progress](/UploadImages/2020-11-08%20(9).png)
 
 
 Training About to End
