@@ -73,5 +73,5 @@ eroded_mask = cv2.erode(mask, kernel)
 - From this contours can be extracted using OpenCvs findContours function and bounding rects can be estabilished for theindividual seeds. Ultimately we can then store them in a temporary folder where individual photos will looks somewhat like this:
 
 ![img1](/UploadImages/1.jpg)  
-![img1](/UploadImages/2jpg)  
-![img1](/UploadImages/3.jpg)
+![img2](/UploadImages/2jpg)  
+![img3](/UploadImages/3.jpg)
