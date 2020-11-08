@@ -113,7 +113,7 @@ Training in Progress
 
 
 Training About to End
-![Training About to End](/UploadImages/trainingabttoend.jpg)
+![Training About to End](/UploadImages/trainingabttoend.jpeg)
 
 History of Model
 ![History](/UploadImages/history.jpg)
