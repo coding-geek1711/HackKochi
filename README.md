@@ -122,6 +122,11 @@ Confusion Matrix
 ![confusion matrix](/UploadImages/Image.png)
 
 ### Step 4 : 
+First we need to save the model in utils folder.
+
+For people who just need the inference model, the weights are uploaded [here]()
+Download them and save them into a folder named utils (create one if it doesnt exist)
+
 Now we just have to annotate the labels as follows:
 ```
 class_names = ['Average', 'Bad', 'Excellent', 'Good', 'Worse']
