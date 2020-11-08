@@ -43,3 +43,11 @@ So we are going to scour for Open Source Data Hosting Platforms like Kaggle for 
   ![DatasetTree](/UploadImages/DatasetTree.png)
 
 ## Step 2:
+Now we have to create a mask for our input image which can help us extract out our seeds from the image. The general approach towards this is first input the image through cv2 and then resize it and convert to GrayScale.
+
+```python
+image = cv2.imread(//PATH OF INPUT IMAGE)
+image = cv2.resize(image, (// RESIZE FACTOR))       //RESIZE FACTOR SHOULD BE FACTOR OF 16 LIKE 640 ETC
+gray_image = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+```
+![GrayScale Image](/UploadImages/GrayscaleImage.png)
