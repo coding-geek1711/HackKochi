@@ -124,7 +124,7 @@ Confusion Matrix
 ### Step 4 : 
 First we need to save the model in utils folder.
 
-For people who just need the inference model, the weights are uploaded [here]()
+For people who just need the inference model, the weights are uploaded [here](https://drive.google.com/drive/folders/1XjBZgfu4qi5JwTsxCckycWPd2_dyARuN?usp=sharing)
 Download them and save them into a folder named utils (create one if it doesnt exist)
 
 Now we just have to annotate the labels as follows:
