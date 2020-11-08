@@ -116,10 +116,10 @@ Training About to End
 ![Training About to End](/UploadImages/trainingabttoend.jpeg)
 
 History of Model
-![History](/UploadImages/history.jpg)
+![History](/UploadImages/HISTORY.png)
 
 Confusion Matrix
-![confusion matrix](/UploadImages/confusionMatrix.jpg)
+![confusion matrix](/UploadImages/Image.png)
 
 ### Step 4 : 
 Now we just have to annotate the labels as follows:
